@@ -1,0 +1,248 @@
+/*Classes auxiliares */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+a{
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+
+/* Começo da estilização do header */
+header {
+    width: 100%;
+    height: 48px;
+    margin: 48px 0;
+}
+
+header > .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+header nav.menu ul li a{
+    color: #999;
+    font-size: 20px;
+}
+
+
+
+
+/* Começando a estilização do banner */
+section.banner{
+    width: 100%;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+section.banner .box{
+    max-width: 650px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px 48px;
+}
+
+section.banner .box .conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+section.banner .box h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.banner .box p{
+    font-size: 20px;
+    color: #fff;
+}
+
+section.banner .box a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* Começando a estilização do rodapé */
+footer.rodape{
+    width: 100%;
+    margin: 30px 0;
+    float: left;
+    font-size: 30px;
+}
+
+footer.rodape p{
+    margin-bottom: 0;
+}
+
+footer.ropape small.creditos{
+    font-size: 18px;
+}
+
+footer.ropape small.creditos a{
+    font-size: 18px;
+}
+
+
+
+/* Começando a estilizaçõa da página de CONTATO */
+section.contato form{
+    max-width: 400px;
+    margin: 5rem auto;
+}
+
+section.contato form fieldset {
+    padding: 1rem;
+}
+
+section.contato form fieldset legend {
+    font-size: 2rem;
+}
+
+section.contato form fieldset .campo {
+    margin-bottom: 2.8rem;
+}
+
+section.contato form fieldset .campo:last-of-type {
+    margin-bottom: 0;
+}
+
+section.contato form fieldset .flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+section.contato form fieldset .w50 div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.contato form fieldset label {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+section.contato form fieldset input[type='text'],
+section.contato form fieldset input[type='email'] {
+    width: 100%;
+    height: 20px;
+    font-size: 1rem;
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+
+section.contato form fieldset input[type='text']:focus, 
+section.contato form fieldset input[type='email']:focus {
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+
+
+section.contato form fieldset input[type='date'] {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+section.contato form fieldset select,
+section.contato form fieldset textarea {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+}
+
+
+section.contato form fieldset textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+section.contato form fieldset input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+section.contato form fieldset input[type="submit"]:hover {
+    color: black;
+    background-color: white;
+}
+
+
+section.contato form fieldset label[for="cpf"] {
+    margin-bottom: 10px;
+}
