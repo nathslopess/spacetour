@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceTour</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <header class="cabecalho">
+            <div class="conteudo">
+                <img src="../img/logo-spacetours.png" alt="Logo escrito SpaceTour" class="logo">
+                <nav class="menu">
+                    <ul>
+                        <!-- Mudei a ordem da lista pois para mim faz mais sentido -->
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Pacotes</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="contato">
+            <div class="conteudo">
+                <form action="../index.html">
+                    <fieldset>
+                        <legend>Cadastre-se!</legend>
+                        <div class="campo flex w50">
+                            <div>
+                                <label for="name">Nome:</label>
+                                <input type="text" name="nome" id="idNome" autofocus>
+                            </div>
+                            <div>
+                                <label for="sobrenome">Sobrenome:</label>
+                                <input type="text" name="sobrenome" id="idsobrenome">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="idEmail">
+                            </div>
+                        </div>
+                        <div class="campo flex w50">
+                            <div>
+                                <label for="cpf">CPF:</label>
+                                <input type="text" name="cpf" id="idcpf">
+                            </div>
+                            <div>
+                                <label for="DataNascimento">Data de Nascimento:</label>
+                                <input type="date" name="DataNascimento" id="idDataNascimento">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="genero">Gênero:</label>
+                                <select name="genero" id="idGenero">
+                                    <option name="escolha" id="idEscolha" selected disabled>Selecione</option>
+                                    <option name="masculino" id="idmasculino">Masculino</option>
+                                    <option name="feminino" id="idfeminino">Feminino</option>
+                                    <option name="nda" id="idNda">Prefiro não dizer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="texto">Qual a sua motivação para a viagem?</label>
+                                <textarea name="texto" id="idTexto"></textarea>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <footer class="rodape">
+            <div class="conteudo">
+                <p>2021.Design Responsivo</p>
+                <small class="creditos">Criado por <a href="#">Vinicius de Oliveira</a></small>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
